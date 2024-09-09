@@ -1,0 +1,12 @@
+[awsvms]
+
+# Replace with your actual AWS EC2 instance public IP addresses
+<EC2-INSTANCE-PUBLIC-IP-1>
+<EC2-INSTANCE-PUBLIC-IP-2>
+
+[awsvms:vars]
+ansible_user=Administrator
+ansible_password=<Your_Admin_Password>
+ansible_connection=winrm
+ansible_winrm_transport=basic
+ansible_winrm_server_cert_validation=ignore
